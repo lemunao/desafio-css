@@ -3,33 +3,56 @@
   border: 0;
 }
 
+.main-page {
+  background-color: lightgray;
+}
 navbar {
-    grid-area: navbar;
-    background-color: #66f;
-    text-align: center;
-    justify-content: center;
-    height: 5vh
-  }
-  aside {
-    grid-area: aside;
-    background-color: #66f;
-  
-  }
-  main {
-    grid-area: main;
-    background-color: #66f;
-    
-  }
-  footer {
-    grid-area: footer;
-    background-color: #66f;
-  }
+  grid-area: navbar;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  height: 7vh;
+}
 
-.grid-container{
-    display: grid;
-    grid-template-areas:
+aside {
+  grid-area: aside;
+  background-color: lightgray;
+  color: gray;
+  font-weight: lighter;
+  padding-left: 8%;
+  padding-top: 5%;
+}
+
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+  background-color: #66f;
+  height: 5vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
     "navbar navbar navbar navbar navbar"
     "aside main main main main"
     "footer footer footer footer footer";
-    gap: 2px;
+}
+
+.lateral-menu {
+    display: flex;
+    flex-direction: column;    
+    height: 85vh;
+  }
+
+.category-format{
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
 }
