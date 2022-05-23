@@ -10,8 +10,8 @@ navbar {
     justify-content: center;
     height: 5vh
   }
-  menu {
-    grid-area: menu;
+  aside {
+    grid-area: aside;
     background-color: #66f;
   
   }
@@ -29,7 +29,7 @@ navbar {
     display: grid;
     grid-template-areas:
     "navbar navbar navbar navbar navbar"
-    "menu main main main main"
+    "aside main main main main"
     "footer footer footer footer footer";
     gap: 2px;
 }
