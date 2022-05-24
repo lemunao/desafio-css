@@ -33,6 +33,20 @@ footer {
     "footer footer footer footer footer";
 }
 
+.bot-tab{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding: 0%;
+  margin: 0%;
+}
+.buy-tab{
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
 .lateral-menu {
   display: flex;
   flex-direction: column;
@@ -46,20 +60,15 @@ footer {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 1px;
+  flex-wrap: nowrap;
+  width: 33%;
  
 }
-.card{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 31%;
-  margin: 1px;  
+.card{  
+  background-color: white;  
+  margin: 10px;
+  width: 100%;
 }
-p
 
 
 
