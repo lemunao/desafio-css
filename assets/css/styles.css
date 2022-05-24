@@ -29,9 +29,13 @@ aside{
   display: flex;
   flex-direction: column;
   height: 85vh;
-
-
 }
+.footer-format{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
