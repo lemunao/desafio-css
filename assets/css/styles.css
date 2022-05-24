@@ -5,7 +5,6 @@
 
 .main-page {
   background-color: lightgray;
-  width: 100%;
 }
 navbar {
   grid-area: navbar;
@@ -18,19 +17,19 @@ navbar {
 
 .main {
   grid-area: main;
-  width: 100%;
+  
 }
 footer {
   grid-area: footer;
   background-color: #66f;
-  height: 5vh;
+  height: 8vh;
 }
 aside{
   grid-area: aside;
   display: flex;
   flex-direction: column;
   height: 85vh;
-  
+
 
 }
 .grid-container {
