@@ -16,15 +16,23 @@ navbar {
   height: 7vh;
 }
 
-main {
+.main {
   grid-area: main;
+  width: 100%;
 }
 footer {
   grid-area: footer;
   background-color: #66f;
   height: 5vh;
 }
+aside{
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  
 
+}
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -32,25 +40,30 @@ footer {
     "aside main main main main"
     "footer footer footer footer footer";
 }
-
-.bot-tab{
+.img-tab {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.bot-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   color: black;
   padding: 0%;
   margin: 0%;
 }
-.buy-tab{
+
+.buy-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: blue;
   color: white;
   display: flex;
   justify-content: center;
-}
-.lateral-menu {
-  display: flex;
-  flex-direction: column;
-  height: 85vh;
 }
 
 .category-format {
@@ -60,24 +73,20 @@ footer {
 
 .cards {
   display: flex;
-  flex-wrap: nowrap;
-  width: 33%;
- 
-}
-.card{  
-  background-color: white;  
-  margin: 10px;
+  flex-flow: row nowrap;
   width: 100%;
 }
-
-
+.card {
+  background-color: white;
+  margin: 10px;  
+}
 
 @media (max-width: 1000px) {
   .cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2px; 
+    margin-bottom: 2px;
     flex-direction: column;
   }
 }
@@ -86,8 +95,8 @@ footer {
   .card {
     display: flex;
     justify-content: center;
-    align-items: center;   
-    margin-bottom: 2px; 
+    align-items: center;
+    margin-bottom: 2px;
     flex-direction: column;
   }
 }
