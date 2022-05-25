@@ -38,10 +38,13 @@ aside{
 
 .grid-container {
   display: grid;
+  grid-template-columns: 15% auto;
+  width: 100%;
   grid-template-areas:
-    "navbar navbar navbar navbar navbar"
-    "aside main main main main"
-    "footer footer footer footer footer";
+    "navbar navbar navbar navbar"
+    "aside main main main"
+    "footer footer footer footer";
+    height: 100vh;
 }
 .img-tab {
   display: flex;
@@ -101,5 +104,14 @@ aside{
     align-items: center;
     margin-bottom: 2px;
     flex-direction: column;
+  }
+}
+
+@media (max-width:1000px){
+  .buy-tab{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
   }
 }
