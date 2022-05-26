@@ -1,11 +1,10 @@
 * {
   margin: 0%;
   border: 0;
-}
-
-.main-page {
   background-color: lightgray;
 }
+
+
 navbar {
   grid-area: navbar;
   background-color: darkblue;
@@ -39,79 +38,94 @@ aside{
 .grid-container {
   display: grid;
   grid-template-columns: 15% auto;
-  width: 100%;
+  width: auto;
   grid-template-areas:
-    "navbar navbar navbar navbar"
-    "aside main main main"
-    "footer footer footer footer";
-    height: 100vh;
-}
-.img-tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    "navbar navbar"
+    "aside main"
+    "footer footer";
+ 
 }
 
-.bot-tab {
+.shopping-cart{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;  
+  grid-template-areas: 
+    "displaycard displaycard displaycard";
+}
+
+displaycard{
+  grid-area: display-card;  
+  width: auto;
+}
+.card  {
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 1%;
+}
+
+.content p{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: white;
-  color: black;
-  padding: 0%;
-  margin: 0%;
+  width: auto;
 }
 
-.buy-tab {
-  display: flex;
-  justify-content: center;
+img{
+  width: auto;
+}
+.footerclass{
+  background-color: blue;
+  text-align: center;
   align-items: center;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* FLEXBOX */
+
+.pinWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 calc(50% - 1em);
+  background-color: white;
+}
+
+.pinWrapper {
+  padding: 0;
+  overflow: hidden;  
+  background-color: white;
+  margin: .5em;
+}
+
+.pinWrapper p {
+  font-size: .8em;
+  background-color: white;
+}
+
+.pin {
+  padding: .8em;
+  background-color: white;
+}
+
+.CreditTitle {
+  border-top: 1px solid #e0e0e0;
   background-color: blue;
   color: white;
-  display: flex;
-  justify-content: center;
 }
 
-.category-format {
-  font-weight: bolder;
-  padding-bottom: 5px;
-}
 
-.cards {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
-}
-.card {
-  background-color: white;
-  margin: 10px;  
-}
 
-@media (max-width: 1000px) {
-  .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2px;
-    flex-direction: column;
-  }
-}
 
-@media (max-width: 1000px) {
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2px;
-    flex-direction: column;
-  }
-}
-
-@media (max-width:1000px){
-  .buy-tab{
-    background-color: blue;
-    color: white;
-    display: flex;
-    justify-content: center;
-  }
-}
