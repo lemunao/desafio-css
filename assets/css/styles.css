@@ -57,53 +57,12 @@ displaycard{
   grid-area: display-card;  
   width: auto;
 }
-.card  {
-  flex: auto;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  margin: 1%;
-}
-
-.content p{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: auto;
-}
-
-img{
-  width: auto;
-}
-.footerclass{
-  background-color: blue;
-  text-align: center;
-  align-items: center;
-  width: auto;
-}
-
-
-
-
-
-
-
-
-
-
 /* FLEXBOX */
-
-.pinWrapper {
+.card-style {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0 1 calc(50% - 1em);
   background-color: white;
-}
-
-.pinWrapper {
   padding: 0;
   overflow: hidden;  
   background-color: white;
@@ -113,19 +72,29 @@ img{
 .pinWrapper p {
   font-size: .8em;
   background-color: white;
+  align-items: center;
+  justify-content: center;
 }
 
-.pin {
-  padding: .8em;
+.cardtext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
 }
 
-.CreditTitle {
+button{
   border-top: 1px solid #e0e0e0;
   background-color: blue;
   color: white;
+  padding: .5em;
 }
 
-
-
+/* Footer*/
+.footerclass{
+  background-color: blue;
+  text-align: center;
+  align-items: center;
+  width: auto;
+}
 
